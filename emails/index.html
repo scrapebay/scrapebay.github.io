@@ -8,7 +8,8 @@
     <title>ScrapeBay © codeRECODE.com</title>
 
     <link href="../css/bootstrap.min.css" rel="stylesheet">
-
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
     <style>
         .bd-placeholder-img {
             font-size: 1.125rem;
@@ -23,6 +24,10 @@
                 font-size: 3.5rem;
             }
         }
+
+        .mont {
+            font-family: 'Montserrat', sans-serif;
+        }
     </style>
 
 
@@ -31,14 +36,23 @@
 </head>
 
 <body>
-    <header class="bd-header bg-dark py-3 d-flex align-items-stretch border-bottom border-dark">
-        <div class="container-fluid d-flex align-items-center">
-            <h1 class="d-flex align-items-center fs-4 text-white mb-0">
-                <img src="../images/favicon.png" width="30" height="30" class="me-3">
-                ScrapeBay - Brought to you by codeRECODE.com
-            </h1>
+    <nav class="navbar navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="..">
+                <img src="../images/favicon.png" width="24" height="24" class="d-inline-block align-text-top">
+                <span class="fw-bolder mont">ScrapeBay </span>
+                <span class="navbar-text">Brought to you by
+                    codeRECODE.com</span>
+            </a>
+            <div class="d-flex">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="..">Home</a>
+                    </li>
+                </ul>
+            </div>
         </div>
-    </header>
+    </nav>
 
     <div class="col-lg-8 mx-auto p-3 py-md-5">
 
